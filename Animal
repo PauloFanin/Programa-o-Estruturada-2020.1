@@ -1,0 +1,57 @@
+#include <iostream>
+
+using namespace std;
+    
+    string a, b, c, beast; 
+    
+	string entrada (){
+	
+	cin >> a >> b >> c;
+     return (a,b,c); 	
+    	
+	}
+	
+	string animal (){
+	
+    if (a == "vertebrado") {
+        if (b == "ave") {
+            if (c == "carnivoro")
+                beast = "aguia";
+            else
+                beast = "pomba";
+        }
+        else {
+            if (c == "onivoro")
+                beast = "homem";
+            else
+                beast = "vaca";
+        }
+    }
+    else {
+        if (b == "inseto") {
+            if (c == "hematofago")
+                beast = "pulga";
+            else
+                beast = "lagarta";
+        }
+        else {
+            if (c == "hematofago")
+                beast = "sanguessuga";
+            else
+                beast = "minhoca";
+        }
+    }	
+			return (beast);			
+	}
+	
+	void saida (){
+	
+	cout << beast << endl;
+    }
+int main() {
+    entrada();
+    animal ();
+    saida ();
+
+    return 0;
+}
