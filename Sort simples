@@ -1,0 +1,58 @@
+#include <iostream>
+ 
+using namespace std;
+   
+   
+   int i, j, aux, ordcre[3], n[3];
+ 
+  int entrada (){
+  	for (i = 0; i < 3; i++) {
+    	cin >> n[i];
+    	ordcre[i] = n[i];
+    }
+  	return (ordcre[i], n[i]);
+  }
+  
+  int ordernar(){
+  
+    for  (i = 0; i < 3; i++){
+    	
+    	for (j=i + 1; j < 3; j++){
+    		if (ordcre[i] > ordcre[j] ){
+    			aux = ordcre[i];
+    			ordcre[i] = ordcre[j];
+    			ordcre[j] = aux;
+    			
+    			
+			}
+    	
+    		
+		}
+    	
+    	
+	}
+	return (ordcre[i]);
+  }
+   void saida (){
+   	
+   	for (i = 0; i < 3; i++)
+         cout << ordcre [i] << "\n";
+    for (i = 0; i < 3; i++)
+	     cout << "\n" << n[i];
+	cout << endl;	    
+   	
+   	
+   	
+   }
+   
+   
+   
+int main() {
+   
+    entrada();
+    ordernar();
+    saida();
+        
+ 
+    return 0;
+}
