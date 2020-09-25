@@ -1,0 +1,49 @@
+#include <iostream>
+
+using namespace std;
+
+	int X, Y, s=0;
+
+int entrada(){
+	
+	cin>> X >> Y;	
+	return(X,Y);
+}
+
+int soma(){
+	
+	if(X<Y){
+	for (X=X+1;X < Y ;X++ ){
+	    
+		if(  X%2==1 || X%2==-1 ){
+		s = s + X;
+			
+			 
+		}
+   	}  
+    }else{
+	 
+    for (Y=Y+1;Y < X ;Y++){
+	    	
+		if(  Y%2==1 || Y%2==-1 ){
+			s = s + Y;
+			 
+		}
+   	}   
+}
+    return(s);
+}
+
+void saida(){
+	cout<< s << endl;
+	
+}
+int main(){
+	
+	entrada();
+	soma();
+	saida();
+	
+	
+	return 0;
+}
