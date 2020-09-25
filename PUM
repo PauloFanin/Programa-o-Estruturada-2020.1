@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+int n = 1, i, t=0, a, b, c;	
+
+int entrada(){
+	cin >> i;	
+	
+}
+
+int contador(){
+  
+		  a = ++t;
+		  b = ++t;
+		  c = ++t;
+		  t++;
+		  	 		
+  		return (a, b, c);
+  
+}	
+	
+	void saida(){
+		  cout << a << " " ;
+		  cout << b << " ";
+		  cout << c << " ";
+		  cout << "PUM" << endl;
+			
+	}
+
+int main(){
+	
+     entrada();
+     for (n==1; i>=n; n++){
+     	contador();
+     	saida();
+	 }
+  
+		
+	return 0;
+}
