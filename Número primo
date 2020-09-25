@@ -1,0 +1,61 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+ int N, X,b=0, y = 0; 
+
+int entrada (){
+
+	  cin >> N;
+    
+	return N;
+}
+ 
+
+int primo (){
+ 	 
+	  cin >> X; 
+	 	 b=0;
+	 	 
+	 	for (int i =1; i <= X;  i++ ){
+	 		  if (X % i == 0){
+	 			b++;
+	 			
+			 }
+			
+	    }
+		 	 		  
+		return (X,b);
+ 	
+	    }	 
+    	  
+   void saida (){
+   	 if ( b== 2){
+   	 	cout<< X << " eh primo"<< endl;
+		
+		}else{
+		cout<< X << " nao eh primo"<< endl;
+		}
+		
+   	 
+   }	
+
+	int main (){
+	    
+		entrada();
+		for (int  i=0; i<N;i++){
+		
+		primo();
+		saida();
+	}
+		
+	return 0;	
+}
+    	 	
+
+
+
+	
+	
+
