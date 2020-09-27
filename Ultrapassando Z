@@ -1,0 +1,50 @@
+#include <iostream>
+
+using namespace std;
+
+int x, z, v=0,s=0;
+
+int entrada (){
+  cin>> x;
+  
+  	while (z<=x)
+ 		cin>> z;
+ 		
+ 	return (x,z);	
+}
+
+int ultz(){
+			 
+	for (int i = x;i<z;i++){
+	
+		s= s+i;
+		v++;
+		
+		if (s>z){
+		
+		break;
+		}
+		
+	
+}
+	
+return (v);	
+}
+  
+  void saida(){
+  	
+  	cout<<v<<endl;
+  	
+  }
+
+int main (){
+ 	
+    entrada();
+	ultz();
+	saida();
+		
+
+ 
+ 
+ return 0;
+}
